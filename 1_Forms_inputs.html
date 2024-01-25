@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Padma Priya">
+    <link rel="icon" href="Untitled.png" type=" image/x-icon">
+
+    <title>Forms and Inputs in HTML</title>
+</head>
+
+<!--to create forms
+    used for registration form and also for getting i/p from user -->
+<body>
+    <h2>1. Text input fields</h2>
+<!--form element is used to create an HTML form for user input-->
+  <form>
+    <fieldset><!--like a border to the form-->
+        <legend > Personal info</legend> <!--like a caption or heading to the form-->
+    
+      <label for="fname">First Name: </label>
+      <br>
+<!-- <input type="text"> defines a single-line input field for text input
+         -> in this input user can text the information -->
+      <input type="text" id="fname" name="fname" required>
+      <br>
+      <label for="lname">Last Name:</label>
+      <br>
+      <input type="text" id="lname" name="lname"required>
+      <br>
+      <label for="surname">Surname:</label>
+      <br>
+<!--placeholder attribute : it's like an example for user to understand.
+         ->  If we strt to type Priya will disappers and an actual value will enter .
+         ->  If we delete the input text again the word Priya will reappear -->
+      <input type="text" id="surname" name="surname
+      " placeholder="Priya"> 
+      <br>
+      <label for="password">Password:</label>
+      <br>
+      <input type="password" name="password" id="password" required><br>
+      <label for="Phone">Phone:</label>
+      <br>
+      <input type="tel" name="Phone" id="Phone" pattern="[0-9]" required>
+      <br>
+      <label for="years">Year:</label>
+      <br>
+      <input type="number" name="Year" id="Year" min="2000" max="2024"  value="2024">
+      <br><br>
+      <button type="submit">submit</button>
+    </fieldset>
+  </form>
+    
+  <hr>
+  
+
+</body>
+</html>

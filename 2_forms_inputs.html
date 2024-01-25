@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Padma Priya">
+    <link rel="icon" href="Untitled.png" type=" image/x-icon">
+
+    <title>Forms and Inputs in HTML</title>
+</head>
+<body>
+<h2>1. Radio Button</h2>
+<form>
+    <fieldset>
+        <legend>Language known</legend>
+    <input type="radio" id="HTML" name="language known">
+    <label for="HTML">HTML</label><br>
+    <input type="radio" id="CSS" name="language known">
+    <label for="CSS">CSS</label><br>
+    <input type="radio" id="Java" name="language known">
+    <label for="Java">Java</label>
+</fieldset>
+<hr>
+<h2>2. Check Box</h2>
+
+<fieldset>
+    <legend>Fav Festival</legend>
+    <input type="checkbox" id="festival" name="festival" >
+    <label for="festival"> Pongal</label><br>
+    <input type="checkbox" id="festival" name="festival" >
+    <label for="festival"> Ramzan</label><br>
+    <input type="checkbox" id="festival" name="festival" >
+    <label for="festival">Christmas</label>
+</fieldset>
+<hr>
+
+<h2> 3.Multiple Choice | select element</h2>
+<!--<select> element defines a drop-down list:-->
+<fieldset>
+    <legend>Fav Destination</legend>
+<label for="Destination">Choose a Destination:</label>
+<select id="Destination" name="Destination">
+<optgroup label="north">
+<option value="Kashmir">Kashmir</option>
+<option value="Kashmir">Ladakh</option>
+<option value="New Delhi">New Delhi</option>
+</optgroup>
+<optgroup label="south ">
+<option value="Bengaluru">Bengaluru</option>
+<option value="kerela">kerela</option>
+<option value="Kodaikanal">Kodaikanal</option>
+<option value="None">other</option>
+</optgroup>
+</select> 
+</fieldset>
+
+<hr>
+<h2>4. Text area</h2>
+<fieldset>
+    <legend>Note</legend>
+    <label for="Message ">Your Message:</label><br>
+    <textarea name="about" id="about" cols="30" rows="10" placeholder="Type your message here"></textarea>
+
+    <br>
+<h2>5.Button element</h2>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+
+</fieldset>
+<h2>6.The output Element</h2>
+<form action="/action_page.php"
+oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range" id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+</form>
+
+</body>
+</html>
